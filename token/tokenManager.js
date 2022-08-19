@@ -21,7 +21,16 @@ export const generateRefresh = (uid, res) => {
             expires: new Date(Date.now() + expiresIn * 1000),
         });
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
-}
+};
+
+export const tokenVerificationErrors = {
+    "invalid signature": "La firma del JWT no es valida",
+    "jwt expires":"JWT Expirado",
+    "invalid token": "Token No Valido",
+    "No Bearer": "Utiliza formato Bearer",
+    "jwt malformed": "JWT formato no valido",
+
+  };
 
