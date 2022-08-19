@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import { login, register } from '../controllers/controllers.js';
+import { infoUser, login, register, refreshToken, logout } from '../controllers/controllers.js';
 import {body} from 'express-validator'
 import { validationResultExpress } from '../middlewares/validationResultExpress.js';
+import { requireToken } from '../middlewares/requireToken.js';
 
 const router = Router()
 
@@ -40,6 +41,11 @@ body("password", "Minimo 7 Caracteres")
 
  validationResultExpress,
  login );
+
+ router.get("/protected", requireToken, infoUser);
+ router.get("/refresh", refreshToken);
+ router.get("/logout", logout);
+
 
 
 
