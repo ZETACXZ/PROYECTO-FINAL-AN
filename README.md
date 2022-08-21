@@ -1,4 +1,5 @@
 # RUTAS
+RUTA PRINCIPAL:  http://localhost:5000
 
 REGISTRARSE : http://localhost:5000/api/v1/auth/register
 
@@ -20,13 +21,6 @@ BUSCAR LINK : http://localhost:5000/api/v1/links/ + ID DEL USUARIO
 
 #### MONGO_CNN=mongodb+srv://julian:yiyoeneco1@base-jg.pkweimc.mongodb.net/proyectoFinal
 
-# OTROS DATOS DEL ARCHIVO.ENV
-
-#### JWT_SECRET=SflKxwRJSMeKKF2QT4fwp
-
-#### JWT_REFRESH=6A2RkJde
-
-#### MODO=developer
 
 # DEPENDENCIAS USADAS
 
