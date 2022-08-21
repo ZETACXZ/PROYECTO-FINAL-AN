@@ -1,9 +1,10 @@
-
+import "dotenv/config"
 import "./database/db.js"
 import express from "express"
 import authRouter from './routes/routes.js'
 import cookieParser from "cookie-parser";
 import linkRouter from "./routes/link.route.js"
+
 
 
 const app = express();
